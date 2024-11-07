@@ -8,11 +8,11 @@ int longestPalindromicSubsequence(const string &s)
     int n = s.size();
     vector<vector<int>> dp(n, vector<int>(n, 0));
 
-    // Single character palindromes
+    // Single character palindromes//base
     for (int i = 0; i < n; ++i)
         dp[i][i] = 1;
 
-    // Bottom-up approach
+    //more than 2 word
     for (int length = 2; length <= n; ++length)
     {
         for (int i = 0; i <= n - length; ++i)
