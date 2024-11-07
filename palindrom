@@ -29,7 +29,7 @@ int longestPalindromicSubsequence(const string &s)
 
 int main()
 {
-    string s = "bbbab";
+    string s = "bbab";
     cout << "Length of Longest Palindromic Subsequence: " << longestPalindromicSubsequence(s) << endl;
     return 0;
 }
